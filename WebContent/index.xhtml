@@ -10,14 +10,16 @@
 <h:head>
 </h:head>
 <h:body>
-	<p:panelGrid columns="2">
-		<p:outputLabel value="Nombre" />
-		<p:inputText />
-		
-		<p:outputLabel value="Sexo" />
-		<p:inputText />
-		
-		<p:commandButton value="Enviar"/>
-	</p:panelGrid>
+	<h:form>
+		<p:panelGrid columns="2">
+			<p:outputLabel value="Nombre" />
+			<p:inputText value="#{persona.nombre}" />
+
+			<p:outputLabel value="Sexo" />
+			<p:inputText value="#{persona.sexo}" />
+
+			<p:commandButton value="Enviar" action="bienvenido.xhtml" />
+		</p:panelGrid>
+	</h:form>
 </h:body>
 </html>
